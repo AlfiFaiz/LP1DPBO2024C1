@@ -23,7 +23,7 @@ int main(){
         cout << "4. Menghapus data " << '\n' ;
         cout << "999. selesai " << '\n' ;
 
-        cout << '\n' <<"Silakan pilih MENU " << '\n' << "-> " ;
+        cout << '\n' <<"Silakan pilih MENU " << '\n' <"->  " ;
         cin >> menu;
             cout << '\n';
 
@@ -143,7 +143,7 @@ int main(){
         }
         
     }
-    cout <<'\n'<< "program selesai \n"; 
+    cout <<'\n'<< "progarm selesai" <<'\n'; 
 
 
     return 0;
