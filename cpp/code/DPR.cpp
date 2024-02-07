@@ -1,3 +1,7 @@
+/*Saya Muhammad Alfi faiz NIM 2207045 mengerjakan
+soal Latihan 1 dalam mata kuliah Desain Pemograman Berorientasi Objek
+untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.*/
+
 // import library
 #include <iostream>
 #include <vector>
