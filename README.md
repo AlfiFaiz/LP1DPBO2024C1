@@ -3,12 +3,18 @@ Muhammad Alfi Faiz
 Ilmu Komputer C1
 # Program Anggota DPR (Daftar Anggota Dewan Perwakilan Rakyat)
 
+terdapat 4 bahasa yang digunakan yaitu
+- C++
+- PHP
+- JAVA
+- PYTHON
+
 ## Deskripsi
 Program ini adalah aplikasi sederhana yang memungkinkan pengguna untuk mengelola data anggota DPR. Setiap anggota DPR memiliki atribut berikut:
 -  ID 
 -  Nama 
 -  Bidang 
--  Partai 
+-  Partai
 
 ## Fitur
 1.  Menampilkan Daftar Anggota DPR : Pengguna dapat melihat daftar anggota DPR yang telah ditambahkan.
@@ -29,17 +35,22 @@ Program ini adalah aplikasi sederhana yang memungkinkan pengguna untuk mengelola
     Masukkan Nama: alfi
     Masukkan Bidang: Hukum
     Masukkan Partai: PMM
+   
     Data berhasil ditambahkan
 
-3. Mengubah Data Anggota:
+4. Mengubah Data Anggota:
      
     Masukkan ID anggota yang ingin diubah: 101
     Masukkan Nama baru: ALFI
     Masukkan Bidang baru: HUKUM
     Masukkan Partai baru: Pmm
+   
     Data anggota berhasil diubah!
      
-4. Menghapus Anggota:
+6. Menghapus Anggota:
      
     Masukkan ID anggota yang ingin dihapus: 101
     Anggota berhasil dihapus!
+
+
+## Pada bahasa PHP program ini tidak bisa berinteraksi langsung dengan user sehingga data yang ada pada bahsa PHP sudah si set didalam code program langsung atau program pada bahasa PHP ini bersifat STATIS
