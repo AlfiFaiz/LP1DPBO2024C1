@@ -38,14 +38,64 @@ public class Main {
                 if (n == 0) {
                     System.out.println("Tidak Ada Daftar anggota DPR: \n");
                 } else {
-                  // Menampilkan data dalam bentuk tabel
-                    System.out.println("+----+-------+--------+--------+");
-                    System.out.println("| ID | Nama  | Bidang | Partai |");
-                    System.out.println("+----+-------+--------+--------+");
+                    int panjang_id = 3;
+                    int panjang_nama = 4;
+                    int panjang_bidang = 6; 
+                    int panjang_partai = 6; 
+
                     for (i = 0; i < n; i++) {
-                        System.out.printf("| %d | %s | %s | %s |\n", anggota.get(i).getId(), anggota.get(i).getNama(), anggota.get(i).getBidang(), anggota.get(i).getPartai());
+                        DPR printanggota = anggota.get(i);
+                        panjang_id = Math.max(panjang_id, String.valueOf(printanggota.getId()).length());
+                        panjang_nama = Math.max(panjang_nama, printanggota.getNama().length());
+                        panjang_bidang = Math.max(panjang_bidang, printanggota.getBidang().length());
+                        panjang_partai = Math.max(panjang_partai, printanggota.getPartai().length());
                     }
-                    System.out.println("+----+-------+--------+--------+");
+                    
+                    System.out.println();
+                    System.out.print("| ID");
+                    for(int j = 1;j <= panjang_id - 2;j++){
+                        System.out.print(" ");
+                    }
+                    System.out.print("| Nama");
+                    for(int j = 1;j <= panjang_nama - 3;j++){
+                        System.out.print(" ");
+                    }
+                    System.out.print("| Bidang");
+                    for(int j = 1;j <= panjang_bidang - 5;j++){
+                        System.out.print(" ");
+                    }
+                    System.out.print("| Partai");
+                    for(int j = 1;j <= panjang_partai - 5;j++){
+                        System.out.print(" ");
+                    }
+                    System.out.print("|");
+                    System.out.println();
+
+                    for (i = 0; i < n; i++) {
+                        DPR printanggota = anggota.get(i);
+                        System.out.print("| " + printanggota.getId());
+                        for(int j = 1;j <= panjang_id - String.valueOf(printanggota.getId()).length();j++){
+                            System.out.print(" ");
+                        }
+                        System.out.print("| " + printanggota.getNama());
+                        for(int j = 1;j <= panjang_nama - printanggota.getNama().length() + 1;j++){
+                            System.out.print(" ");
+                        }
+                        System.out.print("| " + printanggota.getBidang());
+                        for(int j = 1;j <= panjang_bidang - printanggota.getBidang().length() + 1;j++){
+                            System.out.print(" ");
+                        }
+                        System.out.print("| " + printanggota.getPartai());
+                        for(int j = 1;j <= panjang_partai - printanggota.getPartai().length() + 1;j++){
+                            System.out.print(" ");
+                        }
+                        System.out.print("|");
+                        System.out.println();
+                        
+                        // System.out.printf("| %-"+ panjang_id + "d | %-"+ panjang_nama + "s | %-"+ panjang_bidang + "s | %-"+ panjang_partai + "s |\n", , printanggota.getNama(), printanggota.getBidang(), printanggota.getPartai());
+                        // System.out.println("+" + spasi('-', panjang_id + 2) + "+" + spasi('-', panjang_nama + 2) + "+" + spasi('-', panjang_bidang + 2) + "+" + spasi('-', panjang_partai + 2) + "+");
+                    }
+
                 }
             }
             // menu 2 menambahkan data
