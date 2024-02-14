@@ -1,3 +1,6 @@
+Muhammad Alfi Faiz
+2207045
+Ilmu Komputer C1
 # Program Anggota DPR (Daftar Anggota Dewan Perwakilan Rakyat)
 
 ## Deskripsi
