@@ -91,9 +91,6 @@ public class Main {
                         }
                         System.out.print("|");
                         System.out.println();
-                        
-                        // System.out.printf("| %-"+ panjang_id + "d | %-"+ panjang_nama + "s | %-"+ panjang_bidang + "s | %-"+ panjang_partai + "s |\n", , printanggota.getNama(), printanggota.getBidang(), printanggota.getPartai());
-                        // System.out.println("+" + spasi('-', panjang_id + 2) + "+" + spasi('-', panjang_nama + 2) + "+" + spasi('-', panjang_bidang + 2) + "+" + spasi('-', panjang_partai + 2) + "+");
                     }
 
                 }
