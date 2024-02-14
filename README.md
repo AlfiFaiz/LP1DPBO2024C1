@@ -1,5 +1,3 @@
-Berikut adalah contoh  README  untuk program berbasis  OOP  yang menampilkan informasi tentang daftar anggota DPR dengan fitur menambah, mengubah, dan menghapus data. Program ini ditulis dalam bahasa pemrograman  C++ .
-
 # Program Anggota DPR (Daftar Anggota Dewan Perwakilan Rakyat)
 
 ## Deskripsi
